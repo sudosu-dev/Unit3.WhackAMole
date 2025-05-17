@@ -5,8 +5,10 @@ export default function App() {
   const { playing } = useGame();
   return (
     <>
-      <h1>Whack a Mole</h1>
-      {!playing ? <Welcome /> : <Game />}
+      <div className="game-area">
+        <h1>Whack a Mole</h1>
+        {!playing ? <Welcome /> : <Game />}
+      </div>
     </>
   );
 }

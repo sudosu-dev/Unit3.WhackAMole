@@ -72,7 +72,13 @@ export function GameProvider({ children }) {
   function whack() {
     const newScore = score + 1;
     setScore(newScore);
-    setMolePosition(generatePosition(HOLES));
+
+    let prev = molePosition;
+    let next = generatePosition(HOLES);
+    while (prev === next) {
+      next = generatePosition(HOLES);
+    }
+    setMolePosition(next);
   }
 
   const value = {

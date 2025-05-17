@@ -5,3 +5,12 @@
 .mole {
   background: url("/mole.png") no-repeat center/contain;
 }
+
+.game-area {
+  max-width: 30rem; /* match .field max-width */
+  margin: 0 auto; /* center the whole block */
+}
+
+h1 {
+  text-align: center;
+}

@@ -1,12 +1,29 @@
-p {
+.scoreboard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+  /* width: 100%; */
+  max-width: 500px;
+  /* border: 1px solid red; */
+}
+
+.scoreboard button {
+  all: unset;
+  padding: 0.25rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1;
+  background-color: #eee;
+  border: 1px solid black;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.scoreboard > * {
   display: flex;
   justify-content: center;
   align-items: center;
   border: 1px solid black;
-}
-.scoreboard {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 1rem;
-  gap: 1rem;
 }

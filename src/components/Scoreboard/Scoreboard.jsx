@@ -1,4 +1,5 @@
 import { useGame } from "../../context/GameContext/GameContext";
+import "./scoreboard.css";
 
 export default function Scoreboard() {
   const { score, time, gameEnd } = useGame();

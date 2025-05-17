@@ -1,4 +1,5 @@
 import { useGame } from "../../context/GameContext/GameContext";
+import "./displayHighScore.css";
 
 export default function DisplayHighScore() {
   const { highScores } = useGame();

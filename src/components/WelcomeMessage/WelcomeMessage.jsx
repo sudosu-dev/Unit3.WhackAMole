@@ -1,5 +1,5 @@
 import { useGame } from "../../context/GameContext/GameContext";
-
+import "./welcomeMessage.css";
 export default function WelcomeMessage() {
   const { gameStart } = useGame();
   return (
