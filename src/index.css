@@ -1,9 +1,7 @@
-
 .hole {
   background: url("/hole.png") no-repeat center/contain;
 }
 
 .mole {
-  background-image: url("/mole.png");
+  background: url("/mole.png") no-repeat center/contain;
 }
-
